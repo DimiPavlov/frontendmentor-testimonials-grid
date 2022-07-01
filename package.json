@@ -1,0 +1,24 @@
+{
+  "name": "testimonials-grid-section-main",
+  "homepage": "http://DimiPavlov.github.io/frontendmentor-testimonials-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimiPavlov/frontendmentor-testimonials-grid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimiPavlov/frontendmentor-testimonials-grid/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
