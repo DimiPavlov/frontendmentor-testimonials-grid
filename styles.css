@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(210, 46%, 95%);
+  height: 100vh;
+}
+
+.testimonial {
+  border-radius: 8px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 12px 20px 35px;
+  padding: 16px;
+  letter-spacing: 1px;
+}
+
+.testimonial:first-child {
+  background: hsl(263, 55%, 52%);
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 30px right 50px;
+  color: hsl(0, 0%, 100%);
+  grid-area: Daniel;
+}
+
+.testimonial:nth-child(2) {
+  background: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  grid-area: Jonnatan;
+}
+
+.testimonial:nth-child(3) {
+  grid-area: Jeanette;
+}
+
+.testimonial:nth-child(4) {
+  background: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  grid-area: Patrick;
+}
+
+.testimonial:nth-child(5) {
+  grid-area: Kira;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.avatar-image {
+  border-radius: 50%;
+  border: 3px solid #a775f1;
+}
+
+.testimonial:nth-child(3) .avatar-image,
+.testimonial:nth-child(2) .avatar-image,
+.testimonial:nth-child(5) .avatar-image {
+  border: none;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-left: 16px;
+}
+
+.info-container span:last-child {
+  opacity: 0.5;
+}
+
+.text-container p:first-child {
+  font-size: 24px;
+  margin: 24px 0;
+  font-weight: 700;
+}
+
+.text-container p:last-child {
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 24px;
+  width: min(98%, 1500px);
+  margin-inline: auto;
+  padding-block: 38px;
+  grid-template-areas: "Daniel" "Jonnatan" "Jeanette" "Patrick" "Kira";
+}
+
+@media (min-width: 662px) {
+  .testimonials-grid {
+    grid-template-areas:
+      "Daniel Daniel Jonnatan Kira"
+      "Jeanette Patrick Patrick Kira";
+  }
+}
